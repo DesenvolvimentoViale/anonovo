@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const carouselImagePaths = [
   '/assets/dt/REVEILLON517.jpg',
@@ -25,7 +27,12 @@ const DinnerSection = () => {
             <div className="auto-carousel-container">
               {carouselImagePaths.map((imagePath, index) => (
                 <div key={index} className={`auto-carousel-slide ${index === currentSlide ? 'active' : ''}`}>
-                  <img src={process.env.PUBLIC_URL + imagePath} alt={`Ceia de Reveillon ${index + 1}`} />
+                  <LazyLoadImage 
+                    src={process.env.PUBLIC_URL + imagePath} 
+                    alt={`Ceia de Reveillon ${index + 1}`} 
+                    effect="blur" 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                  />
                 </div>
               ))}
             </div>
@@ -38,7 +45,6 @@ const DinnerSection = () => {
             </div>
             <p>Celebre a noite da virada com uma ceia preparada por nossos chefs. Oferecemos um banquete com pratos clássicos, opções contemporâneas e uma mesa de sobremesas que encanta a todos, tudo em um ambiente decorado e com música ao vivo.</p>
             <div className="options-list">
-              {/* MUDANÇA AQUI: Trocamos 'a' por 'button' para corrigir o aviso */}
               <button className="option-pill"><span>Opções vegetarianas</span><i className="fas fa-arrow-right"></i></button>
               <button className="option-pill"><span>Opções sem glúten</span><i className="fas fa-arrow-right"></i></button>
             </div>

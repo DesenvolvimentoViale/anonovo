@@ -112,10 +112,13 @@ a:focus-visible, button:focus-visible {
     flex: 0 0 360px;
     background-color: var(--panel-bg); 
     border-radius: var(--border-radius); 
-    box-shadow: var(--shadow-light); 
+    box-shadow: var(--shadow-light); /* Mantém a sombra inicial */
     
-    /* MUDANÇA AQUI: Em vez de "all", animamos apenas o "transform" */
+    /* Anima apenas o movimento */
     transition: transform 0.3s ease; 
+    
+    /* AVISO AO NAVEGADOR: otimize a animação da propriedade 'transform' */
+    will-change: transform;
     
     overflow: hidden; 
     cursor: pointer;
@@ -124,8 +127,8 @@ a:focus-visible, button:focus-visible {
 }
 
 .hotel-card:hover { 
+    /* Apenas move o card para cima, sem alterar a sombra */
     transform: translateY(-10px); 
-    box-shadow: var(--shadow-dark); 
 }
 .hotel-card img { 
     width: 100%; 

@@ -1,4 +1,6 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const FamilySection = () => {
   return (
@@ -7,9 +9,9 @@ const FamilySection = () => {
         <div className="two-column-layout layout-reversed">
           <div className="image-content">
             <div className="collage-grid">
-              <img src={process.env.PUBLIC_URL + "/assets/dt/REVEILLON173.jpg"} alt="Festa de Reveillon Viale Hotéis" />
-              <img src={process.env.PUBLIC_URL + "/assets/cataratas/DSC09521.jpg"} alt="Mesa de Sobremesas de Reveillon" />
-              <img src={process.env.PUBLIC_URL + "/assets/dt/REVEILLON86.jpg"} alt="Buffet de Reveillon" />
+              <LazyLoadImage src={process.env.PUBLIC_URL + "/assets/dt/REVEILLON173.jpg"} alt="Festa de Reveillon Viale Hotéis" effect="blur" />
+              <LazyLoadImage src={process.env.PUBLIC_URL + "/assets/cataratas/DSC09521.jpg"} alt="Mesa de Sobremesas de Reveillon" effect="blur" />
+              <LazyLoadImage src={process.env.PUBLIC_URL + "/assets/dt/REVEILLON86.jpg"} alt="Buffet de Reveillon" effect="blur" />
             </div>
           </div>
           <div className="text-content">
