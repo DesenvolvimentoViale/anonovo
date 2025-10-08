@@ -21,7 +21,12 @@ const HotelModal = ({ hotel, closeModal }) => {
     'Hospede-se conosco': 'fa-concierge-bell', 'Vantagens': 'fa-thumbs-up',
   };
 
-  const reservaUrl = `https://book.omnibees.com/chain/1557?q=${hotel.id}&CheckIn=29122025&CheckOut=01012026&ad=2&ch=0&NRooms=1`;
+  // LÓGICA ATUALIZADA AQUI:
+  // Verifica se o hotel é o DoubleTree (id '5293').
+  // Se for, usa o link da Atlantica. Senão, usa o link padrão da Omnibees.
+  const reservaUrl = hotel.id === '5293'
+    ? 'https://www.letsatlantica.com.br/hotel/doubletree-by-hilton-foz-do-iguacu?utm_source=instagram&utm_medium=social&utm_campaign=ig-dfoz-link-bio'
+    : `https://book.omnibees.com/chain/1557?q=${hotel.id}&CheckIn=29122025&CheckOut=01012026&ad=2&ch=0&NRooms=1`;
 
   return (
     <div className="modal-overlay active" onClick={closeModal}>
@@ -71,7 +76,6 @@ const HotelModal = ({ hotel, closeModal }) => {
           <div className="modal-footer">
             <div className="modal-price"><span className="amount">{hotel.price}</span></div>
             
-            {/* Lógica para adicionar o botão extra APENAS para o Viale Tower (ID '8158') */}
             {hotel.id === '8158' && (
               <a 
                 href="https://www.sympla.com.br/evento/reveillon-illumina-sky-bar-rooftop-viale-tower-2026/3100156" 
