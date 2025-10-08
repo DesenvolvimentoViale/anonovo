@@ -12,15 +12,9 @@ const Header = ({ isScrolled }) => {
         </a>
         <nav>
           <ul className="nav-links">
-            <li>
-              <a href="#hero-section">Início</a>
-            </li>
-            <li>
-              <a href="#catalog-section">Hotéis</a>
-            </li>
-            <li>
-              <a href="#gastronomia-section">Ceias</a>
-            </li>
+            <li><a href="#hero-section">Início</a></li>
+            <li><a href="#catalog-section">Hotéis</a></li>
+            <li><a href="#ceia-section">Ceias</a></li>
           </ul>
         </nav>
       </div>

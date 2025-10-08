@@ -1,15 +1,14 @@
 import React from 'react';
-import heroBackgroundImage from '../assets/tower/Viale Tower01109.jpg';
 
 const Hero = () => {
   return (
     <section 
       className="hero" 
       id="hero-section" 
-      style={{ backgroundImage: `url(${heroBackgroundImage})` }}
+      style={{ backgroundImage: `url(/assets/tower/Viale Tower01109.jpg)` }}
     >
       <div className="hero-content">
-        <h1>Viva o melhor Reveillon em Foz</h1>
+        <h1>Viva a Magia do Reveillon em Foz</h1>
         <p>
           Descubra o encanto das festas de fim de ano com ceias espetaculares e
           uma atmosfera mágica em nossos hotéis.

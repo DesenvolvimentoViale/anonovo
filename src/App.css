@@ -244,12 +244,20 @@ a:focus-visible, button:focus-visible {
 .amenity-item { display: flex; align-items: center; gap: 0.8rem; color: var(--secondary-text); font-size: 0.9rem; margin-bottom: 0.5rem; }
 .amenity-item i { color: var(--gold-color); width: 18px; text-align: center; font-size: 1rem; }
 .modal-footer {
-    background-color: var(--panel-bg); padding: 1rem 1.5rem;
-    border-top: 1px solid #eee; margin-top: auto;
-    display: flex; justify-content: space-between; align-items: center;
+    background-color: var(--panel-bg); 
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #eee; 
+    margin-top: auto;
+    display: flex; 
+    justify-content: flex-end; /* Alinha os botões à direita */
+    align-items: center;
+    gap: 1rem; /* Adiciona um espaço entre os botões */
 }
-.modal-price .amount { font-size: 1.3rem; font-weight: 700; color: var(--primary-text); }
 
+/* Centraliza o preço caso não haja botões */
+.modal-footer .modal-price {
+    margin-right: auto;
+}
 /* Responsive Styles */
 @media (max-width: 991px) {
     .nav-links { display: none; }

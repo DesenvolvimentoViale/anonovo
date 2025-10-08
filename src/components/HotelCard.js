@@ -3,7 +3,10 @@ import React from 'react';
 const HotelCard = ({ hotelId, hotel, openModal }) => {
   return (
     <div className="hotel-card" onClick={() => openModal(hotelId)}>
+      
+      {/* Agora ele vai ler a imagem importada do hotelData.js */}
       <img src={hotel.images[0]} alt={hotel.name} />
+
       <div className="card-content">
         <h3>{hotel.name}</h3>
         <p>
