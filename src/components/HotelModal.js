@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const HotelModal = ({ hotel, closeModal }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -37,7 +39,14 @@ const HotelModal = ({ hotel, closeModal }) => {
           <div className="modal-carousel-track" style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
             {hotel.images.map((imagePath, index) => (
               <div className="modal-carousel-slide" key={index}>
-                <img src={process.env.PUBLIC_URL + imagePath} alt={`${hotel.name} ${index + 1}`} />
+                <LazyLoadImage 
+                  src={process.env.PUBLIC_URL + imagePath} 
+                  alt={`${hotel.name} ${index + 1}`} 
+                  effect="blur"
+                  width="100%"
+                  height="100%"
+                  style={{ objectFit: 'cover' }}
+                />
               </div>
             ))}
           </div>
