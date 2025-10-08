@@ -16,14 +16,16 @@ const HotelModal = ({ hotel, closeModal }) => {
   };
   
   const amenityIcons = {
-    default: 'fa-check-circle', 'Ceia de Reveillon': 'fa-utensils', 'Estrutura': 'fa-building',
-    'Diferenciais': 'fa-star', 'Coquetel de Fim de Ano': 'fa-glass-cheers',
-    'Hospede-se conosco': 'fa-concierge-bell', 'Vantagens': 'fa-thumbs-up',
+    default: 'fa-check-circle',
+    'Ceia de Reveillon': 'fa-utensils',
+    'Estrutura': 'fa-building',
+    'Diferenciais': 'fa-star',
+    'Coquetel de Fim de Ano': 'fa-glass-cheers',
+    'Hospede-se conosco': 'fa-concierge-bell',
+    'Vantagens': 'fa-thumbs-up',
   };
 
-  // LÓGICA ATUALIZADA AQUI:
-  // Verifica se o hotel é o DoubleTree (id '5293').
-  // Se for, usa o link da Atlantica. Senão, usa o link padrão da Omnibees.
+  // Lógica para definir a URL de reserva correta para cada hotel
   const reservaUrl = hotel.id === '5293'
     ? 'https://www.letsatlantica.com.br/hotel/doubletree-by-hilton-foz-do-iguacu?utm_source=instagram&utm_medium=social&utm_campaign=ig-dfoz-link-bio'
     : `https://book.omnibees.com/chain/1557?q=${hotel.id}&CheckIn=29122025&CheckOut=01012026&ad=2&ch=0&NRooms=1`;
@@ -33,9 +35,9 @@ const HotelModal = ({ hotel, closeModal }) => {
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <div className="modal-carousel-track" style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
-            {hotel.images.map((image, index) => (
+            {hotel.images.map((imagePath, index) => (
               <div className="modal-carousel-slide" key={index}>
-                <img src={image} alt={`${hotel.name} ${index + 1}`} />
+                <img src={process.env.PUBLIC_URL + imagePath} alt={`${hotel.name} ${index + 1}`} />
               </div>
             ))}
           </div>
@@ -76,6 +78,7 @@ const HotelModal = ({ hotel, closeModal }) => {
           <div className="modal-footer">
             <div className="modal-price"><span className="amount">{hotel.price}</span></div>
             
+            {/* Lógica para o botão extra do Viale Tower */}
             {hotel.id === '8158' && (
               <a 
                 href="https://www.sympla.com.br/evento/reveillon-illumina-sky-bar-rooftop-viale-tower-2026/3100156" 

@@ -4,8 +4,8 @@ const HotelCard = ({ hotelId, hotel, openModal }) => {
   return (
     <div className="hotel-card" onClick={() => openModal(hotelId)}>
       
-      {/* Agora ele vai ler a imagem importada do hotelData.js */}
-      <img src={hotel.images[0]} alt={hotel.name} />
+      {/* Usa process.env.PUBLIC_URL para garantir que o caminho para a imagem na pasta 'public' seja encontrado */}
+      <img src={process.env.PUBLIC_URL + hotel.images[0]} alt={hotel.name} />
 
       <div className="card-content">
         <h3>{hotel.name}</h3>

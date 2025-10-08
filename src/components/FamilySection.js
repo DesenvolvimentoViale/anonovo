@@ -1,20 +1,15 @@
 import React from 'react';
 
-// Selecionando as melhores imagens das suas pastas para o layout
-import festaImage from '../assets/dt/REVEILLON173.jpg';      // Imagem maior, mais festiva
-import ceiaImage from '../assets/cataratas/DSC09521.jpg';   // Imagem da mesa de sobremesas
-import buffetImage from '../assets/dt/REVEILLON86.jpg';     // Imagem do buffet
-
 const FamilySection = () => {
   return (
-    <section className="feature-section fade-in-section" id="ceia-section">
+    <section className="feature-section" id="ceia-section">
       <div className="container">
-        <div className="two-column-layout">
+        <div className="two-column-layout layout-reversed">
           <div className="image-content">
             <div className="collage-grid">
-              <img src={festaImage} alt="Festa de Reveillon Viale Hotéis" />
-              <img src={ceiaImage} alt="Mesa de Sobremesas de Reveillon" />
-              <img src={buffetImage} alt="Buffet de Reveillon" />
+              <img src={process.env.PUBLIC_URL + "/assets/dt/REVEILLON173.jpg"} alt="Festa de Reveillon Viale Hotéis" />
+              <img src={process.env.PUBLIC_URL + "/assets/cataratas/DSC09521.jpg"} alt="Mesa de Sobremesas de Reveillon" />
+              <img src={process.env.PUBLIC_URL + "/assets/dt/REVEILLON86.jpg"} alt="Buffet de Reveillon" />
             </div>
           </div>
           <div className="text-content">

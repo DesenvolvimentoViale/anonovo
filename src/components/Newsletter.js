@@ -7,7 +7,7 @@ const Newsletter = () => {
     mail: '',
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false); // Para desabilitar o botão durante o envio
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,27 +27,23 @@ const Newsletter = () => {
       return;
     }
 
-    // 1. A URL do endpoint do seu CRM
     const endpointUrl = 'https://app-3SMTDNLIFO.marketingautomation.services/webforms/receivePostback/MzY0NjA0MjIyAQA/d881b313-1065-4871-9e08-72224c697abf';
 
-    // 2. Prepara os dados no formato que o servidor espera
     const formUrlEncoded = new URLSearchParams();
     formUrlEncoded.append('name', formData.name);
     formUrlEncoded.append('lastname', formData.lastname);
-    formUrlEncoded.append('email', formData.mail); // CRM geralmente espera 'email', não 'mail'
+    formUrlEncoded.append('email', formData.mail);
     
     try {
-      // 3. Envia os dados usando o método POST
-      const response = await fetch(endpointUrl, {
+      await fetch(endpointUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: formUrlEncoded.toString(),
-        mode: 'no-cors' // Importante para evitar erros de CORS com endpoints de tracking
+        mode: 'no-cors'
       });
 
-      // 4. Se o envio ocorreu (não podemos verificar o sucesso com 'no-cors', mas prosseguimos)
       setIsSubmitted(true);
 
     } catch (error) {

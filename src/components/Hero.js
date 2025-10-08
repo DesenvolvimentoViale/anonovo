@@ -1,11 +1,14 @@
 import React from 'react';
 
 const Hero = () => {
+  // ATENÇÃO: Verifique se o nome do arquivo é EXATAMENTE este, incluindo maiúsculas.
+  const imageUrl = process.env.PUBLIC_URL + '/assets/dt/REVEILLON177.jpg';
+
   return (
     <section 
       className="hero" 
       id="hero-section" 
-      style={{ backgroundImage: `url(/assets/tower/Viale Tower01109.jpg)` }}
+      style={{ backgroundImage: `url(${imageUrl})` }}
     >
       <div className="hero-content">
         <h1>Viva a Magia do Reveillon em Foz</h1>
