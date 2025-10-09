@@ -1,6 +1,34 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const LocationSection = () => {
+  const [isMapVisible, setIsMapVisible] = useState(false);
+  const mapRef = useRef(null);
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
+      setIsMapVisible(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsMapVisible(true);
+            observer.disconnect();
+          }
+        });
+      },
+      { rootMargin: '200px' }
+    );
+
+    if (mapRef.current) {
+      observer.observe(mapRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="location-section" className="location-detailed fade-in-section">
       <div className="container">
@@ -25,17 +53,23 @@ const LocationSection = () => {
               </ul>
             </div>
           </div>
-          <div className="location-map">
-            <iframe 
-              src="https://www.google.com/maps/d/embed?mid=1CZixQlUNRN4ynUHrDmyF8-BpBVani-U&ehbc=2E312F&noprof=1" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen="" 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Mapa de Localização dos Hotéis Viale"
-            ></iframe>
+          <div className="location-map" ref={mapRef}>
+            {isMapVisible ? (
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=1CZixQlUNRN4ynUHrDmyF8-BpBVani-U&ehbc=2E312F&noprof=1"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Mapa de Localização dos Hotéis Viale"
+              ></iframe>
+            ) : (
+              <div className="map-placeholder" aria-hidden="true">
+                <span>Carregando mapa...</span>
+              </div>
+            )}
           </div>
         </div>
       </div>

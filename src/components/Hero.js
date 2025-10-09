@@ -1,15 +1,22 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 const Hero = () => {
-  // ATENÇÃO: Verifique se o nome do arquivo é EXATAMENTE este, incluindo maiúsculas.
-  const imageUrl = process.env.PUBLIC_URL + '/assets/dt/REVEILLON177.jpg';
+  const heroImage = process.env.PUBLIC_URL + '/assets/dt/REVEILLON177.jpg';
 
   return (
-    <section 
-      className="hero" 
-      id="hero-section" 
-      style={{ backgroundImage: `url(${imageUrl})` }}
-    >
+    <section className="hero" id="hero-section">
+      <div className="hero-media" aria-hidden="true">
+        <LazyLoadImage
+          src={heroImage}
+          alt=""
+          effect="opacity"
+          wrapperClassName="hero-media-wrapper"
+          visibleByDefault
+          decoding="async"
+        />
+      </div>
       <div className="hero-content">
         <h1>Viva a Magia do Reveillon em Foz</h1>
         <p>
