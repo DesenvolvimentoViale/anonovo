@@ -62,11 +62,12 @@ function App() {
               <p>Escolha o cenário perfeito para sua festa de Ano Novo.</p>
             </div>
             <div className="hotel-grid">
-              {Object.keys(hotelData).map((hotelId) => (
+              {Object.entries(hotelData).map(([hotelId, hotel], index) => (
                 <HotelCard
                   key={hotelId}
                   hotelId={hotelId}
-                  hotel={hotelData[hotelId]}
+                  hotel={hotel}
+                  eager={index < 2}
                   openModal={openModal}
                 />
               ))}
