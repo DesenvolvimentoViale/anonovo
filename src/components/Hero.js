@@ -14,11 +14,11 @@ const Hero = () => {
           effect="opacity"
           wrapperClassName="hero-media-wrapper"
           visibleByDefault
-          decoding="async"
+          decoding="async"S
         />
       </div>
       <div className="hero-content">
-        <h1>Viva a Magia do Reveillon em Foz</h1>
+        <h1>Aproveite a virada do Ano em Foz</h1>
         <p>
           Descubra o encanto das festas de fim de ano com ceias espetaculares e
           uma atmosfera mágica em nossos hotéis.

@@ -19,7 +19,7 @@ const HotelModal = ({ hotel, closeModal }) => {
   
   const amenityIcons = {
     default: 'fa-check-circle',
-    'Ceia de Reveillon': 'fa-utensils',
+    'Ceia de Réveillon': 'fa-utensils',
     'Estrutura': 'fa-building',
     'Diferenciais': 'fa-star',
     'Coquetel de Fim de Ano': 'fa-glass-cheers',

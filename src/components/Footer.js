@@ -24,9 +24,9 @@ const Footer = () => {
           <div className="footer-column">
             <h3>Contato</h3>
             <ul>
-              <li><a href="https://api.whatsapp.com/send/?phone=554521057299&text=Ol%C3%A1+vim+do+site+de+Reveillon+e+quero+mais+informa%C3%A7%C3%B5es!">Central de Reservas</a></li>
-              <li><a href="https://api.whatsapp.com/send/?phone=554521057299&text=Ol%C3%A1+vim+do+site+de+Reveillon+e+quero+mais+informa%C3%A7%C3%B5es!">Eventos Corporativos</a></li>
-              <li><a href="https://api.whatsapp.com/send/?phone=554521057299&text=Ol%C3%A1+vim+do+site+de+Reveillon+e+quero+mais+informa%C3%A7%C3%B5es!">Fale Conosco</a></li>
+              <li><a href="https://api.whatsapp.com/send/?phone=554521057299&text=Ol%C3%A1+vim+do+site+de+R%C3%A9veillon+e+quero+mais+informa%C3%A7%C3%B5es!">Central de Reservas</a></li>
+              <li><a href="https://api.whatsapp.com/send/?phone=554521057299&text=Ol%C3%A1+vim+do+site+de+R%C3%A9veillon+e+quero+mais+informa%C3%A7%C3%B5es!">Eventos Corporativos</a></li>
+              <li><a href="https://api.whatsapp.com/send/?phone=554521057299&text=Ol%C3%A1+vim+do+site+de+R%C3%A9veillon+e+quero+mais+informa%C3%A7%C3%B5es!">Fale Conosco</a></li>
             </ul>
           </div>
         </div>
@@ -36,7 +36,7 @@ const Footer = () => {
             <img src="https://ss-usa.s3.amazonaws.com/companies/MzY0NjA0MjIyAQA/uploads/Logos/Viale_Hoteis_H-_Branca__-_Alpha.png" alt="Viale Hotéis Logo" />
           </a>
           <div className="footer-socials">
-            <a href="https://api.whatsapp.com/send/?phone=554521057299&text=Ol%C3%A1+vim+do+site+de+Reveillon+e+quero+mais+informa%C3%A7%C3%B5es!" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=554521057299&text=Ol%C3%A1+vim+do+site+de+R%C3%A9veillon+e+quero+mais+informa%C3%A7%C3%B5es!" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
             <a href="https://www.facebook.com/vialecataratashotel" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/viale.cataratas/" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
           </div>
