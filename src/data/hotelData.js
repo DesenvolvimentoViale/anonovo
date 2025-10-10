@@ -1,7 +1,7 @@
 export const hotelData = {
     vialecataratas: {
       id: '2521',
-      name: 'Reveillon no Viale Cataratas',
+      name: 'Réveillon no Viale Cataratas',
       location: 'Avenida das Cataratas',
       price: 'Consulte',
       images: [
@@ -17,14 +17,14 @@ export const hotelData = {
         '/assets/cataratas/DSC09930.jpg', '/assets/cataratas/DSC09931.jpg'
       ],
       amenities: {
-        'Ceia de Reveillon': ['Música ao vivo', 'Bebidas inclusas (água, refrigerante, suco e cerveja)', 'Cardápio especial', 'Recreação para os pequenos'],
+        'Ceia de Réveillon': ['Música ao vivo', 'Bebidas inclusas (água, refrigerante, suco e cerveja)', 'Cardápio especial', 'Recreação para os pequenos'],
         'Diferenciais': ['Ambiente familiar', 'Atendimento premiado', 'Fácil acesso'],
       },
-      description: 'Celebre o Reveillon no Viale Cataratas! **A sua hospedagem inclui a Ceia Especial de Reveillon**, com recreação e bebidas inclusas. Uma experiência completa para tornar a data ainda mais memorável!<br><br><strong>Estadia mínima de 3 noites.</strong>',
+      description: 'Celebre o Réveillon no Viale Cataratas! **A sua hospedagem inclui a Ceia Especial de Réveillon**, com recreação e bebidas inclusas. Uma experiência completa para tornar a data ainda mais memorável!<br><br><strong>Estadia mínima de 3 noites.</strong>',
     },
     vialetower: {
       id: '8158',
-      name: 'Hospede-se para o Reveillon no Viale Tower',
+      name: 'Hospede-se para o Réveillon no Viale Tower',
       location: 'Centro de Foz do Iguaçu',
       price: 'Consulte',
       images: [
@@ -40,11 +40,11 @@ export const hotelData = {
         'Coquetel de Fim de Ano': ['Vista panorâmica', 'Drinks exclusivos', 'Comida finger food', 'Música ao vivo'],
         'Diferenciais': ['Rooftop Sky Bar', 'Piscina com borda infinita', 'Ambiente sofisticado'],
       },
-      description: 'Passe o Reveillon no coração de Foz do Iguaçu e aproveite a vista mais encantadora da cidade no Viale Tower. <br><br>O hotel receberá o evento **Réveillon Illumina Sky Bar**, com coquetel exclusivo no rooftop. **Este evento não está incluso na estadia e deve ser adquirido separadamente** através do <a href="https://www.sympla.com.br/evento/reveillon-illumina-sky-bar-rooftop-viale-tower-2026/3100156" target="_blank" rel="noopener noreferrer">Sympla</a>.<br><br><strong>Estadia mínima de 3 noites.</strong>',
+      description: 'Passe o Réveillon no coração de Foz do Iguaçu e aproveite a vista mais encantadora da cidade no Viale Tower. <br><br>O hotel receberá o evento **Réveillon Illumina Sky Bar**, com coquetel exclusivo no rooftop. **Este evento não está incluso na estadia e deve ser adquirido separadamente** através do <a href="https://www.sympla.com.br/evento/reveillon-illumina-sky-bar-rooftop-viale-tower-2026/3100156" target="_blank" rel="noopener noreferrer">Sympla</a>.<br><br><strong>Estadia mínima de 3 noites.</strong>',
     },
     doubletree: {
       id: '5293',
-      name: 'Reveillon no DoubleTree by Hilton',
+      name: 'Réveillon no DoubleTree by Hilton',
       location: 'Próximo às Cataratas',
       price: 'Consulte',
       images: [
@@ -56,14 +56,14 @@ export const hotelData = {
         '/assets/dt/REVEILLON342.jpg', '/assets/dt/REVEILLON362.jpg', '/assets/dt/REVEILLON517.jpg'
       ],
       amenities: {
-        'Ceia de Reveillon': ['Decoração temática', 'Buffet completo de Ano Novo', 'Bebidas inclusas (refrigerantes, sucos e água)', 'Recreação para os pequenos'],
+        'Ceia de Réveillon': ['Decoração temática', 'Buffet completo de Ano Novo', 'Bebidas inclusas (refrigerantes, sucos e água)', 'Recreação para os pequenos'],
         'Estrutura': ['Piscinas', 'Espaço Kids', 'Acomodações de alto padrão'],
       },
-      description: 'Viva a magia do Ano Novo no DoubleTree by Hilton! **A hospedagem inclui a Ceia Especial de Reveillon**, com recreação para toda a família e uma celebração inesquecível.<br><br><strong>Estadia mínima de 3 noites.</strong>'
+      description: 'Viva a magia do Ano Novo no DoubleTree by Hilton! **A hospedagem inclui a Ceia Especial de Réveillon**, com recreação para toda a família e uma celebração inesquecível.<br><br><strong>Estadia mínima de 3 noites.</strong>'
     },
     vialeiguassu: {
       id: '11956',
-      name: 'Reveillon no Viale Iguassu',
+      name: 'Réveillon no Viale Iguassu',
       location: 'Em frente ao shopping',
       price: 'Consulte',
       images: [
@@ -76,6 +76,6 @@ export const hotelData = {
       amenities: {
         'Vantagens': ['Frente ao Shopping JL', 'Conforto e praticidade', 'Café da manhã reforçado'],
       },
-      description: 'No Viale Iguassu, seu Reveillon fica ainda mais prático e aconchegante. Hospede-se em frente ao shopping e desfrute de todo o conforto que só o hotel pode oferecer. A hospedagem não possui ceia.<br><br><strong>Estadia mínima de 3 noites.</strong>'
+      description: 'No Viale Iguassu, seu Réveillon fica ainda mais prático e aconchegante. Hospede-se em frente ao shopping e desfrute de todo o conforto que só o hotel pode oferecer. A hospedagem não possui ceia.<br><br><strong>Estadia mínima de 3 noites.</strong>'
     }
 };

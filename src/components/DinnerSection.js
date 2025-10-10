@@ -29,7 +29,7 @@ const DinnerSection = () => {
                 <div key={index} className={`auto-carousel-slide ${index === currentSlide ? 'active' : ''}`}>
                   <LazyLoadImage 
                     src={process.env.PUBLIC_URL + imagePath} 
-                    alt={`Ceia de Reveillon ${index + 1}`} 
+                    alt={`Ceia de Réveillon ${index + 1}`} 
                     effect="blur" 
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                   />
@@ -40,7 +40,7 @@ const DinnerSection = () => {
           <div className="text-content">
             <div className="gastronomy-header">
               <div className="gastronomy-icon"><i className="fas fa-utensils"></i></div>
-              <h2>Ceia de Reveillon Inesquecível</h2>
+              <h2>Ceia de Réveillon Inesquecível</h2>
               <p className="gastronomy-subtitle">CUIDADO EM TODOS OS DETALHES</p>
             </div>
             <p>Celebre a noite da virada com uma ceia preparada por nossos chefs. Oferecemos um banquete com pratos clássicos, opções contemporâneas e uma mesa de sobremesas que encanta a todos, tudo em um ambiente decorado e com música ao vivo.</p>

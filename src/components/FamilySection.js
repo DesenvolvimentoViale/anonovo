@@ -9,13 +9,13 @@ const FamilySection = () => {
         <div className="two-column-layout layout-reversed">
           <div className="image-content">
             <div className="collage-grid">
-              <LazyLoadImage src={process.env.PUBLIC_URL + "/assets/dt/REVEILLON173.jpg"} alt="Festa de Reveillon Viale Hotéis" effect="blur" />
-              <LazyLoadImage src={process.env.PUBLIC_URL + "/assets/cataratas/DSC09521.jpg"} alt="Mesa de Sobremesas de Reveillon" effect="blur" />
-              <LazyLoadImage src={process.env.PUBLIC_URL + "/assets/dt/REVEILLON86.jpg"} alt="Buffet de Reveillon" effect="blur" />
+              <LazyLoadImage src={process.env.PUBLIC_URL + "/assets/dt/REVEILLON173.jpg"} alt="Festa de Réveillon Viale Hotéis" effect="blur" />
+              <LazyLoadImage src={process.env.PUBLIC_URL + "/assets/cataratas/DSC09521.jpg"} alt="Mesa de Sobremesas de Réveillon" effect="blur" />
+              <LazyLoadImage src={process.env.PUBLIC_URL + "/assets/dt/REVEILLON86.jpg"} alt="Buffet de Réveillon" effect="blur" />
             </div>
           </div>
           <div className="text-content">
-            <h2>Reveillon em Família</h2>
+            <h2>Réveillon em Família</h2>
             <p>
               No Viale Cataratas e no DoubleTree by Hilton, sua noite da virada ganha um sabor especial. Nossa ceia foi pensada para reunir famílias em torno da mesa, com pratos que despertam memórias e uma mesa de sobremesas preparada com carinho. Tudo em um ambiente festivo e acolhedor, para você celebrar momentos únicos com quem ama.
             </p>

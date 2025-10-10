@@ -18,7 +18,7 @@ const Hero = () => {
         />
       </div>
       <div className="hero-content">
-        <h1>Viva a Magia do Reveillon em Foz</h1>
+        <h1>Viva a Magia do Réveillon em Foz</h1>
         <p>
           Descubra o encanto das festas de fim de ano com ceias espetaculares e
           uma atmosfera mágica em nossos hotéis.

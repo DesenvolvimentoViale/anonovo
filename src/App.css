@@ -772,12 +772,14 @@ a:focus-visible, button:focus-visible {
 }
 .auto-carousel-slide {
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
     opacity: 0;
     transition: opacity 1.2s ease-in-out;
+    border-radius: inherit;
+    overflow: hidden;
 }
 .auto-carousel-slide.active { 
     opacity: 1; 
@@ -786,6 +788,14 @@ a:focus-visible, button:focus-visible {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.auto-carousel-slide .lazy-load-image-background,
+.auto-carousel-slide .lazy-load-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: inherit;
 }
 
 @media (max-width: 991px) {
