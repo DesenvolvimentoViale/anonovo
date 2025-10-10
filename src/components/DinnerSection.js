@@ -20,7 +20,7 @@ const DinnerSection = () => {
   }, []);
 
   return (
-    <section className="feature-section alt-bg">
+    <section className="feature-section dinner-section alt-bg">
       <div className="container">
         <div className="two-column-layout">
           <div className="image-content">
