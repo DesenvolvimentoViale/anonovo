@@ -67,11 +67,12 @@ export const hotelData = {
       location: 'Em frente ao shopping',
       price: 'Consulte',
       images: [
-        '/assets/iguassu/_MG_5715.jpg',
-        '/assets/iguassu/_MG_5721.jpg',
+        '/assets/iguassu/_MG_5652.jpg',
+        '/assets/iguassu/_MG_5668.jpg',
         '/assets/iguassu/_MG_5725.jpg',
-        '/assets/iguassu/5E3A0980.jpg',
-        '/assets/iguassu/DJI_0031.jpg'
+        '/assets/iguassu/_MG_5721.jpg',
+        '/assets/iguassu/_MG_5752.jpg',
+
       ],
       amenities: {
         'Vantagens': ['Frente ao Shopping JL', 'Conforto e praticidade', 'Café da manhã reforçado'],
