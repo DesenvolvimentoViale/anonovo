@@ -404,6 +404,21 @@ a:focus-visible, button:focus-visible {
         display: flex;
     }
 
+    .two-column-layout,
+    .two-column-layout.layout-reversed {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .two-column-layout.layout-reversed .image-content {
+        order: initial;
+    }
+
+    .two-column-layout .image-content {
+        min-height: 280px;
+    }
+
     .nav-links {
         position: absolute;
         top: calc(100% + 1.25rem);
@@ -442,7 +457,7 @@ a:focus-visible, button:focus-visible {
 
     .main-header { padding: 1.2rem 0; }
 
-    .hotel-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); overflow-x: hidden; padding-bottom: 0; margin: 0; gap: 1.5rem; }
+    .hotel-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); overflow-x: hidden; padding-bottom: 0; margin: 0; gap: 1.5rem; }
     .hotel-card { flex-basis: auto; }
     .footer-middle { flex-direction: column; gap: 1.5rem; }
     .newsletter-box { padding: 2.5rem 1.75rem; }
@@ -495,16 +510,11 @@ a:focus-visible, button:focus-visible {
 
     .two-column-layout,
     .two-column-layout.layout-reversed {
-        grid-template-columns: 1fr;
         gap: 2rem;
     }
 
     .two-column-layout .image-content {
-        min-height: 240px;
-    }
-
-    .two-column-layout.layout-reversed .image-content {
-        order: initial;
+        min-height: 220px;
     }
 
     .collage-grid {
