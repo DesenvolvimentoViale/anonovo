@@ -462,14 +462,10 @@ a:focus-visible, button:focus-visible {
         gap: 1rem;
     }
 
-    .mobile-menu-toggle {
-        width: 44px;
-        height: 44px;
-    }
-
     .nav-links {
-        width: min(320px, 90vw);
-        right: 0.5rem;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
     }
 
     .hero {
